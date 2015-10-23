@@ -1,0 +1,17 @@
+<div>
+    <h1>Person List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr ng-repeat="person in ctrl.persons">
+                <td>{{person.name}}</td>
+                <td><a href="#/details/{{person.id}}" ng-click="ctrl.getPerson(person.id)">{{person.id}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
